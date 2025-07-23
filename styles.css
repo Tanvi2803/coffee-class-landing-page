@@ -1,0 +1,156 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+font-family:Sans-serif;
+background: rgb(165, 202, 181);
+}
+#header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background: rgba(37, 88, 56, 0.9);
+  z-index: 1000;
+}
+.header-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1200px;
+  margin:0 auto;
+  padding:1rem 2rem
+}
+#header-img{
+  height:80px;
+  width:auto;
+}
+ #nav-bar {
+  display: flex;
+  gap: 2rem;
+}
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  position: relative;
+}
+.nav-link:hover {
+            background: rgb(206, 174, 174);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+.section-heading{
+  text-align:center;
+}
+.hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+.features-grid{
+display:flex;
+gap:2rem;
+margin-top:3rem
+}
+.feature-card{
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+#video-section {
+padding: 5rem 2rem;
+text-align: center;
+        }
+  #video {
+max-width: 800px;
+width: 100%;
+height:450px;            
+border-radius: 20px;
+}    
+#form-section {
+ padding: 5rem 2rem;
+max-width: 600px;
+ margin: 0 auto;
+text-align: center;
+}
+
+#form {
+padding: 3rem;
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+margin-top: 2rem;
+}
+
+#email {
+width: 100%;
+padding: 1rem;
+margin-bottom: 1rem;
+border: 2px solid rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.05);
+color: #ffffff;
+font-size: 1rem;
+transition: all 0.3s ease;
+        }
+
+#email:focus {
+outline: none;
+border-color: #00ffff;
+box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+ }
+
+#email::placeholder {
+color: rgba(255, 255, 255, 0.6);
+}
+
+#submit {
+width: 100%;
+padding: 1rem;
+background: rgba(37, 88, 56, 0.9);
+color: #000;
+border: none;
+border-radius: 10px;
+font-size: 1.1rem;
+font-weight: 600;
+cursor: pointer;
+        }
+ @media (max-width: 768px) {
+.header-content {
+  padding: 1rem;
+      }
+
+#nav-bar {
+gap: 1rem;
+}
+.nav-link {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  }
+
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .features-grid {
+                flex-direction: column;
+            }
+
+            .section-heading {
+                font-size: 2rem;
+            }
+
+            #video {
+                height: 250px;
+            }
+        }
+
+
